@@ -24,6 +24,19 @@ AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 <body>
+
+<pre>
+
+    <?php
+
+    $i = 5;
+    var_dump($i);
+
+    ?>
+
+</pre>
+
+
 <?php $this->beginBody() ?>
 
 <div class="wrap">
