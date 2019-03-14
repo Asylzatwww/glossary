@@ -25,17 +25,6 @@ AppAsset::register($this);
 </head>
 <body>
 
-<pre>
-
-    <?php
-
-    $i = 5;
-    var_dump($i);
-
-    ?>
-
-</pre>
-
 
 <?php $this->beginBody() ?>
 
