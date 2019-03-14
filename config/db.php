@@ -7,7 +7,7 @@ return [
     'password' => 'zOoRncGf',
   */
 
-    'dsn' => 'mysql:host=http://s25.webhost1.ru/pma;dbname=yaformat_kf',
+    'dsn' => 'mysql:host=http://s25.webhost1.ru;dbname=yaformat_kf',
     'username' => 'yaformat_kf',
     'password' => 's8^X~c',
     'charset' => 'utf8',
