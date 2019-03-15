@@ -7,6 +7,11 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\GlossarySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
+
+use yii\widgets\ListView;
+use yii\data\ActiveDataProvider;
+
+
 $this->title = 'Glossaries';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -19,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Create Glossary', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
-    <?= GridView::widget([
+    <!--?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
@@ -35,5 +40,17 @@ $this->params['breadcrumbs'][] = $this->title;
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
-    ]); ?>
+    ]); ?-->
+
+    <?php
+
+    echo ListView::widget([
+        'dataProvider' => $dataProvider,
+        'itemView' => '_item',
+    ]);
+
+    ?>
+
+
+
 </div>
