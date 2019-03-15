@@ -41,6 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?-->
+    <div class="container">
 
     <?php
 
@@ -51,6 +52,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
     ?>
 
-
+    </div>
 
 </div>

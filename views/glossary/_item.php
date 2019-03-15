@@ -9,25 +9,21 @@ use yii\widgets\ActiveForm;
 ?>
 
 
-<div class="container">
     <div class="row">
-        <div class="col-2">
-            <img src="<?= $model->id ?>" />
+        <div class="col-md-2">
+            <img src="/uploads/glossary-<?= $model->id ?>" />
         </div>
-        <div class="col-2">
+        <div class="col-md-2">
             <?= Html::encode($model->title) ?>
         </div>
-        <div class="col-2">
+        <div class="col-md-2">
             <?= Html::encode($model->description) ?>
         </div>
-        <div class="col-2">
+        <div class="col-md-2">
             <?= Html::encode($model->prize) ?>
         </div>
-        <div class="col-2">
+        <div class="col-md-2">
             <?= Html::encode($model->money_code_id) ?>
         </div>
     </div>
-
-
-</div>
 
