@@ -73,7 +73,7 @@ class GlossaryController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
             $uploadForm->imageFile = UploadedFile::getInstance($model, 'imageFile');
-            if ($uploadForm->upload()) {
+            if ($uploadForm->upload("glossary-" . $model->getPrimaryKey() )) {
                 // file is uploaded successfully
 
             }
