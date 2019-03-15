@@ -12,7 +12,7 @@ use yii\widgets\ActiveForm;
     <div class="row" style="    height: 100px;
     border: 1px solid;">
         <div class="col-md-2">
-            <img src="/uploads/glossary-<?= $model->id ?>.jpg" src="width:100px" />
+            <img src="/uploads/glossary-<?= $model->id ?>.jpg" style="width:100px" />
         </div>
         <div class="col-md-2">
             <?= Html::encode($model->title) ?>
