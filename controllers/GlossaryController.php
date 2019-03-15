@@ -8,6 +8,7 @@ use app\models\GlossarySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\models\UploadForm;
 
 /**
  * GlossaryController implements the CRUD actions for Glossary model.
