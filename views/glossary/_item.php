@@ -11,7 +11,7 @@ use yii\widgets\ActiveForm;
 
     <div class="row">
         <div class="col-md-2">
-            <img src="/uploads/glossary-<?= $model->id ?>" />
+            <img src="/uploads/glossary-<?= $model->id ?>.jpg" />
         </div>
         <div class="col-md-2">
             <?= Html::encode($model->title) ?>
