@@ -66,7 +66,12 @@ class GlossaryController extends Controller
     {
         $model = new Glossary();
 
+        $uploadForm = new UploadForm();
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            $uploadForm->imageFile = UploadedFile::getInstance($model, 'imageFile');
+
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
