@@ -20,6 +20,8 @@ class Glossary extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+    public $imageFile;
+
     public static function tableName()
     {
         return 'glossary';
